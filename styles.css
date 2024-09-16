@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-content {
+/*    background-color: #ffffff;*/
+    padding: 20px;
+    margin-top: 20px;
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.container {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+/* 图片容器设置为 Grid 布局 */
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6列，每列宽度相等 */
+    gap: 10px; /* 图片之间的间距 */
+}
+
+/* 图片样式 */
+.image-container img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+}
+
+/* 响应式设计 */
+
+
+
+
+/* 图片容器设置为 Grid 布局 */
+.image-container01 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 定义每排3列，每列等宽 */
+    grid-gap: 20px; /* 定义图片之间的间距 */
+    margin-bottom: 20px;
+}
+
+/* 图片样式 */
+.image-container01 img {
+    width: 100%; /* 图片占满所在的列 */
+    height: auto;
+    border: 2px solid #ddd; /* 图片边框 */
+/*    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */*/
+}
+
+
+@media (max-width: 768px) {
+    .image-container {
+        grid-template-columns: repeat(3, 1fr); /* 在中等屏幕，每行显示3张图片 */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        grid-template-columns: repeat(2, 1fr); /* 在小屏幕，每行显示2张图片 */
+    }
+}
+
+        .comment {
+            margin: 20px auto;
+            width: 80%;
+            text-align: left;
+        }
+        .comment input, .comments textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+        .comment button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+        }
+        footer img {
+            width: 100px;
+            vertical-align: middle;
+        }
+        footer a {
+            margin-left: 15px;
+            color: black;
+        }
